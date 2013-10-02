@@ -1,0 +1,45 @@
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function submitinfo()
+{
+	document.degreeform.submit();
+}
+-->
+</script>
+<br> 
+<form action="index.php?target=10&step=2" method="post" name="degreeform" id="degreeform">
+  <table width="600" border="0" align="center" cellpadding="30" cellspacing="1" bgcolor="#999999" class="t2">
+  <tr> 
+    <td align="center" bgcolor="#fcfce5"><p><br>
+        </p>
+     
+        <table width="250" border="0" cellspacing="0" cellpadding="0" class="t2">
+          <tr>
+            <td width="150" align="right">{degree}</td>
+            <td><input name="degree" type="text" id="degree" size="3" maxlength="3"></td>
+          </tr>
+        </table>
+        <br>
+        <input name="user" type="hidden" value="{user}"> <br>
+        <br>
+        <table width="200" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td nowrap><table id="guestvottb1" width="90" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+              <tr> 
+                <td align="center" bgcolor="#eeeeee" id="guestvottd1"><a href="#" onMouseOver="chbgcolor('guestvottb1','guestvottd1','Y')" onMouseOut="chbgcolor('guestvottb1','guestvottd1','N')" onClick="submitinfo()">{ok}</a></td>
+              </tr>
+            </table></td>
+          <td align="right" nowrap>
+<table id="guestvottb2" width="90" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+              <tr> 
+                <td align="center" bgcolor="#eeeeee" id="guestvottd2"><a href="http://202.99.225.146/index.php?target=2" onMouseOver="chbgcolor('guestvottb2','guestvottd2','Y')" onMouseOut="chbgcolor('guestvottb2','guestvottd2','N')">{back}</a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <br>
+    </td>
+  </tr>
+</table>
+</form>

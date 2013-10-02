@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>{title}</title>
+<script language="JavaScript" type="text/JavaScript">
+function chbgcolor(tbbgcolor,tdbgcolor,onoff)
+{
+    if(onoff == 'Y'){
+	    document.all.item(tdbgcolor).bgColor="#fcfce5";
+		document.all.item(tbbgcolor).bgColor="#ff6633";
+	}
+	else
+	{
+	   document.all.item(tdbgcolor).bgColor="#eeeeee";
+	   document.all.item(tbbgcolor).bgColor="#cccccc";
+	}
+}
+</script>
+<link href="template/nmxhw.css" rel="stylesheet" type="text/css">
+</head>
+<body leftmargin="0" topmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td><table width="100%" height="40" border="0" cellpadding="5" cellspacing="0" bgcolor="#339999" class="t1">
+        <tr class="t1"> 
+          <td width="170" height="40" align="center" nowrap>{currtime}</td>
+          <td align="center" nowrap> <table border="0" cellpadding="2" cellspacing="1" bgcolor="#FFFFFF" class="t1">
+              <tr> 
+                <td nowrap bgcolor="#339999">&nbsp;{runstate}&nbsp;</td>
+              </tr>
+            </table></td>
+          <td width="150" align="center">{toptitle}</td>
+        </tr>
+      </table>
+      <table width="100%" height="70" border="0" cellpadding="2" cellspacing="0">
+        <tr> 
+          <td width="167" height="70" align="center"><img src="template/images/logo.gif" width="163" height="64"></td>
+          <td align="center"> <table border="0" cellspacing="0" cellpadding="2" class="t2">
+              <tr align="center"> 
+                <td nowrap>
+<table id="tb1" width="85" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+                    <tr> 
+                      <td align="center" bgcolor="#eeeeee" id="td1"><a href="index.php?target=1" onMouseOver="chbgcolor('tb1','td1','Y')" onMouseOut="chbgcolor('tb1','td1','N')">{result}</a></td>
+                    </tr>
+                  </table></td>
+				  
+                <td width="1" nowrap><img src="template/images/empty.gif" width="1" height="1"></td>
+				<td nowrap>
+<table id="tb2" width="85" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+                    <tr> 
+                      <td align="center" bgcolor="#eeeeee" id="td2"><a href="index.php?target=2" onMouseOver="chbgcolor('tb2','td2','Y')" onMouseOut="chbgcolor('tb2','td2','N')">{browse}</a></td>
+                    </tr>
+                  </table></td>
+                <td width="1" nowrap><img src="template/images/empty.gif" width="1" height="1"></td>
+                <td nowrap><table id="tb3" width="85" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+                    <tr> 
+                      <td height="19" align="center" bgcolor="#eeeeee" id="td3"><a href="index.php?target=3" onMouseOver="chbgcolor('tb3','td3','Y')" onMouseOut="chbgcolor('tb3','td3','N')">{regist}</a></td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="1" nowrap><img src="template/images/empty.gif" width="1" height="1"></td>
+                <td nowrap><table id="tb4" width="85" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+                    <tr> 
+                      <td align="center" bgcolor="#eeeeee"id="td4"><a href="index.php?target=4" onMouseOver="chbgcolor('tb4','td4','Y')" onMouseOut="chbgcolor('tb4','td4','N')">{manual}</a></td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="1" nowrap><img src="template/images/empty.gif" width="1" height="1"></td>
+                <td nowrap><table id="tb5" width="85" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+                    <tr> 
+                      <td align="center" bgcolor="#eeeeee" id="td5">{log}</td>
+                    </tr>
+                  </table>
+                </td>
+               </tr>
+            </table></td>
+          <td width="140" align="center"> <table width="130" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+              <tr> 
+                <td width="130" align="center" nowrap bgcolor="#eeeeee">{displayinfo}
+                  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"  class="t2">
+                    <tr>
+                      <td>{displayinfo1}</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellpadding="3" cellspacing="0" bgcolor="#339999" class="t1">
+        <tr> 
+          <td width="145" nowrap>&nbsp;{loginuser}</td>
+          <td width="100" nowrap> &nbsp;{adminfile}</td>
+          <td width="200" align="center" nowrap>{spaceinfo}</td>
+          <td align="center" nowrap>{dayremain}</td>
+          <form name="formyear" method="post" action="index.php?target=2">
+            <td width="150" align="right"> <select name="selyear" id="selyear" class="t2"  style="{display1}">
+                <option value="">&nbsp;历届优秀作品&nbsp;</option>
+				{selectorder}
+              </select> </td>
+            <td width="80"> <strong> 
+              <input name="Submityear2" type="submit" id="Submityear2" value="浏览" class="t2" style="{display1}">
+              </strong></td>
+          </form>
+        </tr>
+        <tr bgcolor="#FFFFFF" height="5"> 
+          <td height="5" colspan="6"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td><img src="template/images/empty.gif" width="779" height="1"></td>
+  </tr>
+</table>

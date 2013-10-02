@@ -1,0 +1,218 @@
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function subdeleteform()
+{
+	 if (confirm("{confirmdelete}")) 
+	 {     
+	 	 document.deleteform.submit();
+	 }
+}
+function subrenameform()
+{
+	 if (confirm("{confirmrename}")) 
+	 {     
+	 	 document.renameform.submit();
+	 }
+	
+}
+function subcreateform()
+{
+	 if (confirm("{confirmcreate}")) 
+	 {     
+	 	 document.createform.submit();
+	 }
+	
+}
+function subuploadform()
+{
+	 if (confirm("{confirmupload}")) 
+	 {     
+	 		document.all.wait.style.visibility = "visible";
+	        document.uploadform.submit();
+	 }
+	
+}
+function setvalue(tvalue)
+{
+	document.deleteform.filename.value = tvalue;
+	document.renameform.oldname.value = tvalue;
+	document.renameform.newname.focus();
+}
+-->
+</script>
+<table width="90%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#000000" class="t2"  style="display:{display2}">
+  <tr>
+    <td align="center" bgcolor="#FFFFFF">{notes}</td>
+  </tr>
+</table>
+<br>
+<table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="300" align="center" valign="top"> 
+      <table width="260" border="0" cellpadding="0" cellspacing="1" bgcolor="#000000">
+        <tr>
+          <td><table width="260" border="0" align="center" cellpadding="5" cellspacing="0" class="t1">
+              <tr> 
+                <td align="center" bgcolor="#fcfce5"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="display:{display1}">
+                    <tr> 
+                      <td colspan="2" align="center">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td width="50%" align="center"> <table width="70" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2" id="admintb7">
+                          <tr> 
+                            <td height="19" align="center" nowrap bgcolor="#eeeeee" id="admintd7"><a href="{firstdirurl}" onMouseOver="chbgcolor('admintb7','admintd7','Y')" onMouseOut="chbgcolor('admintb7','admintd7','N')">{firstdir}</a></td>
+                          </tr>
+                        </table></td>
+                      <td width="50%" align="center"> <table width="70" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2" id="admintb8">
+                          <tr> 
+                            <td height="19" align="center" nowrap bgcolor="#eeeeee" id="admintd8"><a href="{parentsdirurl}" onMouseOver="chbgcolor('admintb8','admintd8','Y')" onMouseOut="chbgcolor('admintb8','admintd8','N')">{parentsdir}</a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td bgcolor="#fcfce5"> <table width="100%" border="0" cellpadding="3" cellspacing="0" class="t1">
+                    <tr> 
+                      <td bgcolor="#339999">{currentdir}</td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td nowrap bgcolor="#fcfce5"> 
+                  <!-- BEGIN rows -->
+                  <table width="100%" border="0" cellpadding="1" cellspacing="0"  class="t2">
+                    <tr> 
+                      <td width="4"> <li></li></td>
+                      <td nowrap>{filename}</td>
+                      <td width="30" align="right" nowrap>{filesize}</td>
+                      <td width="16" nowrap>KB</td>
+                    </tr>
+                  </table>
+                  <!-- END rows -->
+                </td>
+              </tr>
+              <tr> 
+                <td align="center" bgcolor="#fcfce5"> <table width="100%" border="0" cellspacing="0" cellpadding="0"  style="display:{display1}">
+                    <tr> 
+                      <td width="50%" align="center"><table width="70" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2" id="admintb5">
+                          <tr> 
+                            <td height="19" align="center" nowrap bgcolor="#eeeeee" id="admintd5"><a href="{firstdirurl}" onMouseOver="chbgcolor('admintb5','admintd5','Y')" onMouseOut="chbgcolor('admintb5','admintd5','N')">{firstdir}</a></td>
+                          </tr>
+                        </table></td>
+                      <td width="50%" align="center"><table width="70" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2" id="admintb6">
+                          <tr> 
+                            <td height="20" align="center" nowrap bgcolor="#eeeeee" id="admintd6"><a href="{parentsdirurl}" onMouseOver="chbgcolor('admintb6','admintd6','Y')" onMouseOut="chbgcolor('admintb6','admintd6','N')">{parentsdir}</a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2" align="center">&nbsp; </td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+    <td align="center"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display:{display1}">
+        <tr>
+          <td align="center">
+<table width="400" height="100" border="0" cellpadding="8" cellspacing="1" bgcolor="#000000">
+              <tr> 
+                <td bgcolor="#fcfce5"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="t2">
+                    <tr> <form action="{deleteaction}" method="post" name="deleteform" id="deleteform">
+						<td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="8" class="t2">
+                          <tr> 
+						   <td width="120" height="30" align="right"> 
+                              <label>{selectedfile}</label> 
+                            </td>
+                            <td height="30"> 
+                              <input name="filename" type="text"  id="file5" maxlength="20">
+                            </td>
+                            <td height="30"> 
+                              <table width="50" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2" id="admintb1">
+                                <tr> 
+                                    <td height="19" align="center" nowrap bgcolor="#eeeeee" id="admintd1"><a href=javascript:onclick=subdeleteform() onMouseOver="chbgcolor('admintb1','admintd1','Y')" onMouseOut="chbgcolor('admintb1','admintd1','N')">{delete}</a></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td></form>
+                    </tr>
+                    <tr><form action="{renameaction}" method="post" name="renameform" id="renameform">
+                      <td> <table width="100%" border="0" cellspacing="0" cellpadding="8" class="t2">
+                          <tr>
+							
+                            <td width="120" height="30" align="right">{renameto}</td>
+                            <td height="30"><input name="oldname" type="hidden" id="oldname" value=""> 
+                              <input name="newname" type="text" id="rename5" maxlength="20">
+                            </td>
+                            <td height="30"> 
+                              <table width="50" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2" id="admintb2">
+                                <tr> 
+                                    <td height="19" align="center" nowrap bgcolor="#eeeeee" id="admintd2"><a href="javascript:onClick=subrenameform()" onMouseOver="chbgcolor('admintb2','admintd2','Y')" onMouseOut="chbgcolor('admintb2','admintd2','N')">{ok1}</a></td>
+                                </tr>
+                              </table></td>
+                          </tr> 
+                        </table></td></form>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+            <br>
+            <br> 
+            <table width="400" height="100" border="0" cellpadding="8" cellspacing="1" bgcolor="#000000">
+              <tr> <form action="{createaction}" method="post" name="createform" id="createform">
+                <td bgcolor="#fcfce5"><table width="100%" border="0" cellspacing="0" cellpadding="8" class="t2">
+                    <tr> 
+                      <td width="120" height="30" align="right">{createdir}</td>
+                      <td> 
+                        <input name="create" type="text" id="create4" maxlength="20">
+                      </td>
+                      <td><table width="50" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2" id="admintb3">
+                          <tr> 
+                              <td height="19" align="center" nowrap bgcolor="#eeeeee" id="admintd3"><a href="javascript:onClick=subcreateform()" onMouseOver="chbgcolor('admintb3','admintd3','Y')" onMouseOut="chbgcolor('admintb3','admintd3','N')">{ok2}</a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td></form>
+              </tr>
+            </table>
+            <br>
+            <br>
+            <table width="400" height="100" border="0" cellpadding="8" cellspacing="1" bgcolor="#000000">
+              <tr> <form action="{uploadaction}" method="post" name="uploadform" id="uploadform" enctype="multipart/form-data">
+                <td bgcolor="#fcfce5"><table width="100%" border="0" cellspacing="0" cellpadding="8" class="t2">
+                    
+					<tr> 
+                      <td height="30" align="right">{upload}</td>
+                      <td height="30"> 
+                            
+					  <input type="file" name="upfiles" id="upfiles"> 
+                      </td>
+                      <td><table width="50" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2" id="admintb4">
+                          <tr> 
+                              <td height="19" align="center" nowrap bgcolor="#eeeeee" id="admintd4"><a href="javascript:onClick=subuploadform()" onMouseOver="chbgcolor('admintb4','admintd4','Y')" onMouseOut="chbgcolor('admintb4','admintd4','N')">{ok3}</a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+					
+                  </table></td></form>
+              </tr>
+            </table>
+			<div id="outer" style="position:absolute; left:0px; top:0px; width:200px; height:140px; z-index:1"> 
+			  <div id="wait" style="position:relative; left:400px; top:400px; width:200px; height:140px; z-index:2; visibility: hidden;"> 
+                <table width="100%" height="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+                  <tr> 
+                    <td align="center" bgcolor="#eeeeee">正在上传文件，请稍等....</td>
+                  </tr>
+                </table>
+              </div>
+			</div>
+      </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>

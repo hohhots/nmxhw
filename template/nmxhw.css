@@ -1,0 +1,86 @@
+/* CSS Document */
+.t1 {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #FFFFFF;
+	line-height: 20px;
+}
+.t1 a:link{
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: 20px;
+}
+.t1 a:visited {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.t1 a:hover {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #FF6633;
+	text-decoration: none;
+}
+.t2 {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+	line-height: 20px;
+}
+.t2 a:link{
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.t2 a:visited {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.t2 a:hover {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #ff6633;
+	text-decoration: none;
+}
+.t3 {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+	line-height: 20px;
+}
+.t3 a:link{
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.t3 a:visited {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.t3 a:hover {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #ff6633;
+	text-decoration: underline;
+}

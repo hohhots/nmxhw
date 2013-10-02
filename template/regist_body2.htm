@@ -1,0 +1,142 @@
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function submitinfo()
+{
+	document.registform.submit();
+}
+function resetinfo()
+{
+	document.registform.reset();
+}
+-->
+</script>
+<br> 
+<form name="registform" method="post" action="index.php?target=3&step=3">
+  <table width="600" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#999999">
+    <tr> 
+      <td><table width="600" border="0" cellpadding="20" cellspacing="0" bgcolor="#fcfce5" class="t3">
+          <tr> 
+            <td align="center"> <table width="100%" border="0" cellspacing="0" cellpadding="5" class="t3">
+                <tr> 
+                  <td height="35" colspan="4" align="center"> {title2} 
+                    <hr width="60%" size="1"> <font color="#FF0000">{wrong2}</font></td>
+                </tr>
+                <tr> 
+                  <td height="35" colspan="4">{required2}{explain2}</td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap> {required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{name2}</td>
+                  <td height="35" colspan="2"> <input name="name" type="text" id="name" value="{nameval}" size="20"></td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>{required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{sex2}</td>
+                  <td height="35" colspan="2"><select name="sex">
+                      {sex21}
+                    </select></td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>{required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{age2}</td>
+                  <td height="35" colspan="2"><input name="age" type="text" id="age" value="{ageval}" size="20"></td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>{required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{pass2}</td>
+                  <td height="35"> <input name="pass" type="password" id="pass" value="{passval}" size="21"> 
+                  </td>
+                  <td width="270" nowrap>{alpnum2}</td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>{required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{vepass2}</td>
+                  <td height="35" colspan="2"><input name="vepass" type="password" id="vepass" value="{vepassval}" size="21"></td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>{required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{region2}</td>
+                  <td height="35" colspan="2"><select name="region">
+				    {region21}
+                    </select></td>
+                </tr>
+				 <tr> 
+                  <td width="40" height="35" align="right" nowrap>{required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{grouptype2}</td>
+                  <td height="35" colspan="2"><select name="grouptype">
+				    {grouptype21}
+                    </select></td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>{required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{school2}</td>
+                  <td height="35" colspan="2"><input name="school" type="text" id="school" value="{schoolval}" size="60"></td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>{required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{address2}</td>
+                  <td height="35" colspan="2"><input name="address" type="text" id="address" value="{addressval}" size="60"></td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>{required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{zip2}</td>
+                  <td height="35" colspan="2"><input name="zip" type="text" id="zip" value="{zipval}" size="20"></td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>{required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{telephone2}</td>
+                  <td height="35"><input name="telephone" type="text" id="telephone" value="{telephoneval}" size="20">
+                  </td>
+                  <td height="35">{regionnum2}</td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>&nbsp;</td>
+                  <td width="60" height="35" align="right" nowrap>{mobile2}</td>
+                  <td height="35" colspan="2"><input name="mobile" type="text" id="mobile" value="{mobileval}" size="20"></td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>{required2}{required2}</td>
+                  <td width="60" height="35" align="right" nowrap>{email2}</td>
+                  <td height="35" colspan="2"><input name="email" type="text" id="email" value="{emailval}" size="20"></td>
+                </tr>
+                <tr> 
+                  <td width="40" height="35" align="right" nowrap>&nbsp;</td>
+                  <td width="60" height="35" align="right" nowrap>{www2}</td>
+                  <td height="35" colspan="2"><input name="www" type="text" id="www" value="{wwwval}" size="20"></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+        <table width="600" border="0" align="center" cellpadding="10" cellspacing="0" bgcolor="#fcfce5">
+          <tr> 
+            <td height="40" colspan="3" align="center"> <hr width="60%" size="1"></td>
+          </tr>
+          <tr> 
+            <td align="right"> 
+              <table id="regtb1" width="90" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+                <tr> 
+                  <td height="19" align="center" bgcolor="#eeeeee" id="regtd1"><a href="javascript:onclick=submitinfo()" onMouseOver="chbgcolor('regtb1','regtd1','Y')" onMouseOut="chbgcolor('regtb1','regtd1','N')">{continue2}</a></td>
+                </tr>
+              </table></td>
+            <td width="110" align="center"> 
+              <table id="regtb2" width="90" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+                <tr> 
+                  <td height="19" align="center" bgcolor="#eeeeee" id="regtd2"><a href="javascript:onclick=resetinfo()" onMouseOver="chbgcolor('regtb2','regtd2','Y')" onMouseOut="chbgcolor('regtb2','regtd2','N')">{reset2}</a></td>
+                </tr>
+              </table> 
+            </td>
+            <td>
+<table id="regtb3" width="90" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" class="t2">
+                <tr> 
+                  <td height="19" align="center" bgcolor="#eeeeee" id="regtd3"><a href="index.php" onMouseOver="chbgcolor('regtb3','regtd3','Y')" onMouseOut="chbgcolor('regtb3','regtd3','N')">{exit2}</a></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr> 
+            <td colspan="3" align="center">&nbsp;</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</form>
